@@ -11,7 +11,6 @@ namespace TradutorAutomation
     public class Traduzir : WebPersonalizado
     {
         
-        List<string> idiomasLista = new List<string>();
         public Traduzir()
         {
             StartBrowser();
@@ -24,8 +23,8 @@ namespace TradutorAutomation
 
 
             Click(TypeElement.Xpath, "/html/body/app-root/app-translation/div/app-translation-box/div[1]/div[1]/div[1]/app-language-switch/div/app-language-select[1]/div");
-          //  Thread.Sleep(4000);
-            GetListData(TypeElement.Xpath, "/html/body/div[2]/app-language-select-options/div/ul", "Português");
+            //  Thread.Sleep(4000);
+            PutLangToTranslate(TypeElement.Xpath, "/html/body/div[2]/app-language-select-options/div/ul", "Português");
 
             AssignValue(TypeElement.Xpath, "/html/body/app-root/app-translation/div/app-translation-box/div[1]/div[1]/div[2]/div[1]/div[1]/div/div[1]/textarea", teste);
 

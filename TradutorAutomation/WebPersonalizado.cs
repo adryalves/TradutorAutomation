@@ -327,7 +327,7 @@ namespace TradutorAutomation
             }
         }
 
-        public EasyReturn.Web GetListData(TypeElement typeElement, string element, string lang, int timeout = 3)
+        public EasyReturn.Web PutLangToTranslate(TypeElement typeElement, string element, string lang, int timeout = 3)
         {
             try
             {

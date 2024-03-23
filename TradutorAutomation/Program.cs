@@ -4,6 +4,6 @@
 using TradutorAutomation;
 
 var traduzir = new Traduzir();
-
 traduzir.PegarListaIdiomas();
-Console.WriteLine("Sem erros");
+
+//Console.WriteLine("Sem erros");
